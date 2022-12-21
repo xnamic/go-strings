@@ -8,7 +8,7 @@ Evaluate string as math and return the math operation
 - `-`
 - `^`
 
-# Instalation
+# Installation
 go get github.com/xnamic/strings
 
 # Usage and Example
