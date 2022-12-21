@@ -9,7 +9,7 @@ Evaluate string as math and return the math operation
 - `^`
 
 # Installation
-go get github.com/xnamic/strings
+go get github.com/xnamic/go-strings
 
 # Usage and Example
 
