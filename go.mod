@@ -1,4 +1,4 @@
-module test/test
+module github.com/xnamic/go-strings
 
 go 1.19
 
