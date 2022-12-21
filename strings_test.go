@@ -88,3 +88,10 @@ func TestBracketAsMultiply(t *testing.T) {
 	res, _ := Eval(s)
 	assert.Equal(t, float64(e), res)
 }
+
+func TestPositiveBracket(t *testing.T) {
+	s := "5 + (10)"
+	e := 5 + (10)
+	res, _ := Eval(s)
+	assert.Equal(t, float64(e), res)
+}

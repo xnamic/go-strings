@@ -152,6 +152,20 @@ func isNegative(s string) bool {
 	return true
 }
 
+func isPositive(s string) bool {
+
+	res, err := strconv.ParseFloat(s, 64)
+	if err != nil {
+		return false
+	}
+
+	if res < 0 {
+		return false
+	}
+
+	return true
+}
+
 func normalizeBrackets(s string) (string, error) {
 	start := 0
 	end := 0
@@ -177,7 +191,7 @@ func normalizeBrackets(s string) (string, error) {
 	}
 
 	ns := s[start+1 : end]
-	if isNegative(ns) {
+	if isNegative(ns) || isPositive(ns) {
 		newString = fmt.Sprintf("%s%s%s", s[0:start], ns, s[end+1:])
 		return normalizeBrackets(newString)
 	}
